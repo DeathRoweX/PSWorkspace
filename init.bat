@@ -1,6 +1,6 @@
 ﻿@echo off
-set "repo=https://github.com/DeathRoweX/PowerShell.git"
+set "repo=https://github.com/DeathRoweX/PSWorkspace.git"
 set "currentDir=%~dp0"
 git clone %repo% .
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%currentDir%\Scripts\initial_pc_config.ps1"
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%currentDir%\init.ps1"
 pause
